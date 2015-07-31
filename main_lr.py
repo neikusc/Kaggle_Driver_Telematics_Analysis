@@ -113,6 +113,7 @@ if __name__ == '__main__':
   
   # creating sumission file
   submission = pd.DataFrame.from_csv('sampleSubmission.csv')
+  submission.loc[new_collections[0]] = new_collections[1]
   submission.to_csv('submission.csv', index=True)
   
   print 'Mission completed!'
