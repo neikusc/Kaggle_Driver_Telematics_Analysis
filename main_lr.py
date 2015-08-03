@@ -75,7 +75,7 @@ def create_training_data():
 
 def single_driver_prob(driverId, numbNeg, data, list_of_drivers):
   other_drivers = list(set(list_of_drivers)-set(driverId))
-  negIds = np.random.choice(list_of_drivers, size=numbNeg, replace=False)
+  negIds = np.random.choice(other_drivers, size=numbNeg, replace=False)
   # getting random drivers and trips
   negIds = [neg+'_'+str(random.randint(1,200)) for neg in negIds]
   # getting ids of this driver and trips
@@ -95,7 +95,7 @@ def single_driver_prob(driverId, numbNeg, data, list_of_drivers):
 
 if __name__ == '__main__':
   num_cores = 8
-  numbNeg = 600
+  numbNeg = 200
   
   # creating training data ...
   # create_training_data()
