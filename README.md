@@ -29,7 +29,7 @@ are randomly chosen, one trip from these drivers is chosen, labelled as 0, and a
 above training set. This set then fitted by using LR model, fitting result then be 
 applied back on 200 trips of driver_001. 
 * Need run an experiment to search for an optimum  of numNeg
-* For fast running. I try first with logistic regression. Score obtained 0.75360
+* For fast running. I try first with logistic regression. Score obtained 0.76089
 *   
 
 ### How to generate the solution
