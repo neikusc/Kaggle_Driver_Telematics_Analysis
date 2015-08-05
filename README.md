@@ -40,5 +40,5 @@ for single driver. For all drivers, code will be implemented as the same as file
 
 ### Settings in __main_
 * num_cores: allow multiprocessing N jobs
-* drivers: drivers to process and save to file
-
+* training set need to be created before input in any model by a function 
+create_training_data()
